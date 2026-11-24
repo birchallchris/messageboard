@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Noticeboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Community Noticeboard</h1>
+    <h2>Account</h2>
+    <div id="authSection">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="registerButton">Register</button>
+        <button id="loginButton">Login</button>
+        <button id="logoutButton" hidden>Logout</button>
+        <p id="authStatus">Not logged in</p>
+    </div>
+
+    <h2>Post a message</h2>
+    <form id="messageForm">
+        <input
+            type="text"
+            id="title"
+            placeholder="Message title"
+            required
+        >
+        <textarea
+            id="message"
+            placeholder="Write your message"
+            required
+        ></textarea>
+        <input
+            type="text"
+            id="author"
+            placeholder="Your name"
+            required
+        >
+        <button type="submit">Submit message</button>
+    </form>
+    <h2>Recent messages</h2>
+    <div id="messages"></div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
